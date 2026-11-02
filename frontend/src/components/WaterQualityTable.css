@@ -1,0 +1,129 @@
+.water-quality-table-container {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.table-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.water-quality-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.water-quality-table th {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.water-quality-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.water-quality-table tr:hover {
+  background-color: #f8f9ff;
+}
+
+.parameter-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.parameter-value {
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+}
+
+.parameter-unit {
+  color: #666;
+  text-align: center;
+  font-style: italic;
+}
+
+.parameter-status {
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.status-excellent {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-good {
+  background-color: #cce5ff;
+  color: #004085;
+  border: 1px solid #b3d7ff;
+}
+
+.status-fair {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.status-poor {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.overall-status-row {
+  border-top: 2px solid #667eea;
+}
+
+.overall-status-row .overall-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.overall-status {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .water-quality-table-container {
+    padding: 1rem;
+  }
+  
+  .table-title {
+    font-size: 1.5rem;
+  }
+  
+  .water-quality-table {
+    font-size: 0.9rem;
+  }
+  
+  .water-quality-table th,
+  .water-quality-table td {
+    padding: 0.7rem 0.5rem;
+  }
+}
